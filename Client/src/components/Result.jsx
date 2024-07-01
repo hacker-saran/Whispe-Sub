@@ -11,7 +11,7 @@ function Result() {
 
   useEffect(() => {
     if (filename) {
-      axios.get(`http://127.0.0.1:5000/result?filename=${filename}`)
+      axios.get(`https://whispe-sub.onrender.com/result?filename=${filename}`)
         .then(res => {
           setResponse(res.data);
           setLoading(false);

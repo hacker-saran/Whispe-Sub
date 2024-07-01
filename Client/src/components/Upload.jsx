@@ -19,7 +19,7 @@ function Upload() {
     formData.append('video', file);
 
     setUploading(true);
-    axios.post('http://127.0.0.1:5000/upload', formData, {
+    axios.post('https://whispe-sub.onrender.com/upload', formData, {
       onUploadProgress: (progressEvent) => {
         const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
         setProgress(percentCompleted);
